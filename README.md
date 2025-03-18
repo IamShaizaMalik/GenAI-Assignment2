@@ -39,11 +39,32 @@ Loss Function: Binary Cross-Entropy (BCE)
 
 Framework: PyTorch
 
-The DCGAN generates 64×64 images, but for better visualization, they were upscaled using ESRGAN.
-The model was trained for 200 epochs and it took around 5 hours in training and started to displaying the reasonable animal pictures with fine features. The images obtained at various epochs are:
+The DCGAN was trained to generate 64×64 images. However, for better visualization, the images were later upscaled using ESRGAN. The model training took approximately 5 hours, and around epoch 50, it started generating reasonable animal images with distinguishable features.
+
+Below are the generated images at different epochs:
+
 Epoch1:
 ![fake_epoch_0](https://github.com/user-attachments/assets/5eb58cf8-766d-4f56-ac92-c2c7818861b9)
 
+Epoch 50:
+![fake_epoch_49](https://github.com/user-attachments/assets/619db893-e8a7-46d7-8f4e-eb718819efcf)
+
+Epoch 100:
+![fake_epoch_99](https://github.com/user-attachments/assets/267e8566-e081-4f67-b0ab-aefaf5b80b7d)
+
+Epoch 150:
+![fake_epoch_149](https://github.com/user-attachments/assets/66570325-75b8-4e52-97e9-ab3a8413af31)
+
+Epoch 200:
+![fake_epoch_199](https://github.com/user-attachments/assets/b19e0d92-740a-4d3e-a819-ad3d737ee971)
+
+# Loss Curves & Training Observations
+During training, the generator loss was continuously increasing, while the discriminator loss was decreasing. Although the model was learning new features, the rising generator loss indicated a potential risk of overfitting. To prevent degradation in model performance, training was stopped at 200 epochs.
+
+**Loss Curves:**
+![image](https://github.com/user-attachments/assets/6268a85a-f503-4724-a301-1948ce48e0b4)
+
+Despite achieving reasonable results, further improvements could be made by tuning hyperparameters to enhance image quality and capture finer details. Future work could focus on adjusting the learning rate, optimizing loss balancing, and experimenting with different architectures.
 
 **2. ESRGAN (Enhanced Super-Resolution GAN)**
 
