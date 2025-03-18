@@ -40,6 +40,10 @@ Loss Function: Binary Cross-Entropy (BCE)
 Framework: PyTorch
 
 The DCGAN generates 64×64 images, but for better visualization, they were upscaled using ESRGAN.
+The model was trained for 200 epochs and it took around 5 hours in training and started to displaying the reasonable animal pictures with fine features. The images obtained at various epochs are:
+Epoch1:
+![fake_epoch_0](https://github.com/user-attachments/assets/5eb58cf8-766d-4f56-ac92-c2c7818861b9)
+
 
 **2. ESRGAN (Enhanced Super-Resolution GAN)**
 
