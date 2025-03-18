@@ -1,0 +1,9 @@
+git+https://github.com/xinntao/Real-ESRGAN.git
+basicsr
+facexlib
+gfpgan
+torch
+torchvision
+pillow
+streamlit
+numpy
